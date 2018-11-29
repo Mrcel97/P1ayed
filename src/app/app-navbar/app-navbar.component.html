@@ -1,0 +1,34 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar light-blue lighten-1 fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" (click)="getTab('home')" routerLink="/">
+        <strong class="highlight-logo">P1</strong><strong class="sample-logo">ayed</strong>
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item waves-light" [ngClass]="{'active': pages.actualTab == 'home'}" mdbWavesEffect>
+          <a class="nav-link" (click)="getTab('home')" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item waves-light" [ngClass]="{'active': pages.actualTab == 'notes'}" mdbWavesEffect>
+            <a class="nav-link" (click)="getTab('notes')" routerLink="/notes">Patch Notes</a>
+          </li>
+        <li class="nav-item waves-light" [ngClass]="{'active': pages.actualTab == 'search'}" mdbWavesEffect>
+          <a class="nav-link" (click)="getTab('search')" routerLink="/search">Search</a>
+        </li>
+        <li class="nav-item waves-light" [ngClass]="{'active': pages.actualTab == 'categories'}" mdbWavesEffect>
+          <a class="nav-link" (click)="getTab('categories')" routerLink="/categories">Categories</a>
+        </li>
+        <li class="nav-item waves-light" [ngClass]="{'active': pages.actualTab == 'mylist'}" mdbWavesEffect>
+          <a class="nav-link" (click)="getTab('mylist')" routerLink="/mylist">MyList</a>
+        </li>
+
+        <span class="bar-spacer"></span>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <app-login></app-login>
+      </ul>
+    </links>
+  </mdb-navbar>
+</header>
+<!--Main Navigation-->

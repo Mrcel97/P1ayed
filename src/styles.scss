@@ -1,0 +1,23 @@
+.highlight-logo {
+    display: inline-block;
+    font-size: 23px;
+    color: lightgreen;
+}
+.highlight-title {
+    display: inline-block;
+    font-size: 110px;
+    color: lightgreen;
+}
+.modal-backdrop {
+    background: none;
+    display: none;
+}
+.spaced {
+    margin-top: 90px;
+    margin-left: 10px;
+}
+@media only screen and (max-width: 991px) {
+    .navbar {
+        background-color: #4285F4 !important;
+    }
+}

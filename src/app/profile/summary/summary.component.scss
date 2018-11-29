@@ -1,0 +1,21 @@
+.marged {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.marged-content {
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.profile-img {
+    margin-top: 12px;
+    max-width: 150px;
+    min-width: 100px;
+    border-radius: 50%;
+    border: solid 1.5px rgb(98, 153, 240);
+}
+@media screen and (max-width: 767px) {
+    .profile-img {
+        margin-left: 20%;
+    }
+}

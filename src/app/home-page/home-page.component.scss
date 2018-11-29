@@ -1,0 +1,30 @@
+.hide-info {
+    display: none;
+}
+.front-title {
+    font-size: 15vw;
+}
+h1 {
+    display: inline;
+}
+.highlight-title {
+    font-size: 15vw;
+    display: inline;
+}
+.info-text {
+    font-size: 5vw;
+}
+.sub-info-text {
+    font-size: 3vw;
+}
+@media screen and (min-width: 655px) {
+    .front-title, .highlight-title {
+       font-size: 100px;
+    }
+    .info-text {
+        font-size: 35px;
+    }
+    .sub-info-text {
+        font-size: 20px;
+    }
+}

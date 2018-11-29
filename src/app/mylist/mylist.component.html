@@ -1,0 +1,25 @@
+<div class="full-bg-img">
+  <div class="flex-center">
+    <mdb-card class="search-card">
+      <div class="text-center blue darken-1 text-white game-header">
+        <i class="fas fa-list-ul"></i>
+      </div>
+      <h5 class="card-title">Search for your own lists!</h5>
+      <form class="form-inline">
+        <div class="md-form form-group">
+          <input  mdbInputDirective 
+                  #searchBox
+                  id="search-box" 
+                  type="text"
+                  name="search"
+                  class="form-control"
+                  autocomplete="off"
+                  required>
+          <label for="search-box">List Name</label>
+        </div>
+          <a mdbBtn color="primary" class="waves-light fit-btn" size="sm" routeLink="/search" mdbWavesEffect>Search<i class="fas fa-angle-right"></i></a>
+      </form>
+    </mdb-card>
+  </div>
+</div>
+      

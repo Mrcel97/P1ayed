@@ -1,0 +1,86 @@
+.log-button {
+    display: block;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px lightgray;
+    transition: box-shadow .3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 150px;
+    margin: auto 0 10px 0;
+}
+.btn-primary.dropdown-toggle {
+    background-color: rgb(20, 75, 255) !important;
+}
+.log-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 11px rgb(65, 110, 255); 
+}
+.profile-img {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.popup-info-txt {
+    text-align: center;
+}
+.dropdown-menu {
+    width: 189px
+}
+.dropdown-item {
+    width: 178px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: box-shadow .3s;
+    transition: background-color 0.3s ease;
+}
+.dropdown-item:hover {
+    color: white !important;
+    font-weight: bold;
+    background-color: rgba(68, 155, 255, 0.692); 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.fas, .far {
+    margin-right: 10px;
+}
+.popup-info-txt, .log-button {
+    color: black !important;
+}
+.top {
+    top: 20%;
+}
+.pull-right {
+    position: relative;
+    bottom: 18px;
+    right: 10px;
+}
+.modal-header {
+    text-align: center;
+}
+.bigger {
+    top: 50px;
+    font-size: 21px;
+}
+.top-right {
+    position: relative;
+    top: -40px;
+    left: 15%;
+}
+
+@media screen and (max-width: 444px) {
+    .top-right {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .top-right {
+        left: 25%;
+        top: -45px;
+    }
+}

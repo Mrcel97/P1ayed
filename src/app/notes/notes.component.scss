@@ -1,0 +1,35 @@
+.full-bg-img{
+    transition: background-image 0.2s ease-in-out;
+    background: url(../media/wallpaper1.jpg)no-repeat center center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.patch-img {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    width: 100px;
+    margin-right: 20px;
+}
+.patch-card {
+    margin-bottom: 30px;
+}
+.patch-card:first-of-type {
+    margin-top: 110px;
+}
+.row {
+    padding: 10px;
+}
+.patch-title {
+    color: black;
+}
+.patch-text {
+    margin: 5px;
+}
+.card-body {
+    padding: 0;
+}

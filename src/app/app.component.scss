@@ -1,0 +1,23 @@
+html, body, .ng-scope, .conainer-fluid, .row {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.view {
+    background-size: cover;
+}
+.view-1 {
+    transition: background-image 0.2s ease-in-out;
+    background: url(./media/wallpaper1.jpg)no-repeat center center;
+}
+.view-2 {
+    background: url(./media/wallpaper2.jpg)no-repeat center center;
+}
+.view-3 {
+    background: url(./media/wallpaper3.jpg)no-repeat center center;
+}
+.view-4 {
+    background: url(./media/wallpaper4.jpg)no-repeat center center;
+}

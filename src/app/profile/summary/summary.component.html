@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center" *ngIf="user">
+  <div class="row">
+    <div class="col-md-4 marged">
+      <img class="profile-img" [src]="user.photoURL" alt="profile-pic">
+    </div>
+    <div class="col-md-7 marged-content marged-content">
+      <h6><b> Name: </b>{{user.displayName}}</h6>
+      <h6><b> Email: </b>{{user.email}}</h6>
+      <h6><b> Nº Lists: </b>0</h6>
+      <h6><b> Nº Comments: </b>0</h6>
+      <h6><b> Member since: </b>{{userSince}}</h6>
+    </div>
+  </div>
+</div>

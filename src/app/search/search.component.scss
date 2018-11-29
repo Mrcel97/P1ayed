@@ -1,0 +1,79 @@
+.full-bg-img{
+    transition: background-image 0.2s ease-in-out;
+    background: url(../media/wallpaper2.jpg)no-repeat center center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.patch-img {
+    width: 100px;
+    margin-right: 20px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+.search-card {
+    margin-bottom: 30px;
+    width: 95%;
+}
+.search-card:first-of-type {
+    margin-top: 110px;
+}
+.row {
+    padding: 10px;
+}
+.patch-title {
+    color: black;
+}
+.patch-text {
+    margin: 5px;
+}
+.md-form {
+    display: inline-block;
+    margin-left: 35px;
+    width: 50%
+}
+.form-control {
+    width: 100%;
+}
+.form-inline {
+    margin-bottom: 30px;
+}
+.card-title {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.fit-btn {
+    margin-left: 12px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-transform: none;
+}
+.fas {
+    margin-left: 10px;
+}
+.game-header {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 200%;
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    left: 43%;
+    border-radius: 50%;
+    padding: 5px 10px 5px 0px;
+    font-size: 20px;
+    background-color: #4285F4;
+}
+.inputVal {
+    position: absolute;
+    left: 0;
+}

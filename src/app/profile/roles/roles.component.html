@@ -1,0 +1,16 @@
+<div class="role-container" *ngIf="user">
+  <h6 class="card-header">Your actual role is...</h6>
+  <div class="progress">
+    <div class="progress-bar" 
+    role="progressbar" 
+    [ngStyle]="{'width':getRole()}" 
+    aria-valuenow="25" 
+    aria-valuemin="0" 
+    aria-valuemax="100">
+      <span [ngClass]="{'anon': !isSub() && !isAdmin(),
+                        'sub': isSub(),
+                        'dev': isDev(),
+                        'admin': isAdmin()}" ></span>
+    </div>
+  </div>
+</div>

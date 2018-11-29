@@ -1,0 +1,55 @@
+<div class="col"
+[@cardAnimator]="animationState"
+(@cardAnimator.done)="resetAnimationState()"
+(swiperight)="addGame(game)"
+(swiperight)="startAnimation('swipeL',game)"
+(swipeleft)="startAnimation('swipeR',game)"
+(swipeleft)="navigation(game)">
+  <mdb-card class="shadowed" (click)="detail(game)">
+    <div class="d-flex justify-content-between">
+      <div class="mobile-swipe animated fadeOut">
+        <span class="left-arrow"><i class="fas fa-arrow-left animated wobble"></i>Add</span>
+      </div>
+      <div class="full-width">
+        <div class="d-flex justify-content-center flex-wrap game-title">
+          <span class="game-name"><b>{{game.name}}</b></span><br>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="d-flex p-2">
+            <img class="game-cover" src="{{game.cover.url}}" alt="">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="d-flex justify-content-center card-buttons">
+            <button mdbBtn class="spaced" color="light-green" size="sm" (click)="addGame(game)" mdbTooltip="Add to my list" placement="right" mdbWavesEffect>
+              <i class="fas fa-plus"></i>
+            </button><br>
+            <button mdbBtn class="spaced" color="light-blue" size="sm" (click)="moreInfo(game)" mdbTooltip="More info" placement="right" mdbWavesEffect>
+              <i class="fas fa-info"></i>
+            </button><br>
+            <button mdbBtn class="spaced" color="deep-orange" size="sm" (click)="redirect(game)" mdbTooltip="Game website" placement="right" mdbWavesEffect>
+              <i class="fas fa-globe-americas"></i>
+            </button>
+          </div>
+          <div class="d-flex p-12 pc_tablet full-width">
+            <div>
+              <span class="card-info"><b>Description:</b></span><br/>
+            </div>
+            <div>
+              <span class="small-info">{{getSummary(game)}}</span>
+            </div>
+          </div>
+          <div class="d-flex p-12 justify-content-start pc_tablet">
+            <span><b>Rating:</b> {{game.rating}}</span><br/>
+          </div>
+          <div class="d-flex p-12 pc_tablet marged">
+            <span><b>Popularity:</b> {{game.popularity}}</span><br/>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-swipe animated fadeOut">
+        <span class="right-arrow">Nav<i class="fas fa-arrow-right animated wobble"></i></span>
+      </div>
+    </div>
+  </mdb-card>
+</div>

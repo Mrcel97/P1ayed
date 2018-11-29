@@ -1,0 +1,45 @@
+<button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()"
+  mdbWavesEffect *ngIf="!user">Log In <i class="fas fa-sign-in-alt" style="margin-right: 10px"></i></button>
+
+<div class="dropdown" mdbDropdown *ngIf="user">
+    <button mdbDropdownToggle type="button" mdbBtn color="primary" size="sm" class="dropdown-toggle waves-light" mdbWavesEffect>
+        <span class="helloer">Hi {{user.displayName}}</span>
+        <img class="profile-img" [src]="user.photoURL" alt="profile-pic">
+    </button>
+
+    <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink="/profile"><i class="fas fa-user"></i>Profile</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-lightbulb"></i>Dark / Light</a>
+        <a class="dropdown-item" href="#"><i class="far fa-lightbulb"></i>Dark / Light</a>
+        <a class="dropdown-item" (click)="logout()"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+    </div>
+</div>
+
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="0" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal top" role="document">
+    <div class="modal-content">
+      <div class="modal-header teal lighten-2 white-text">
+        <h4 class="title"><i class="fa fa-log-in"></i>
+            <b class="bigger"><i class="fas fa-sign-in-alt" style="margin-right: 10px"></i>Enter to your account</b>
+        </h4>
+        <button type="button" class="close top-right" aria-label="Close" (click)="frame.hide()">
+            <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <h5 class="popup-info-txt">Hi random user! Let's meet one each other :D</h5>
+      <ul style="text-align: center; margin: 20px;">
+        <div class="d-flex justify-content-center">
+            <div class="log-button" (click)="login()" (click)="frame.hide()">
+                <h5><i class="fab fa-google"></i> Sign In</h5>
+            </div>
+        </div> 
+        <!--
+        <div class="log-button">
+            <h5><i class="fa fa-envelope" (click)="newUserEmail()"></i> Use email</h5>
+        </div>
+        -->
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="full-bg-img">
+  <div class="flex-center">
+    <mdb-card class="search-card">
+      <div id='games-header' class="text-center darken-1 text-white game-header">
+        <i class="fas fa-gamepad"></i>
+      </div>
+      <h5 class="card-title">Search for your favourite games!</h5>
+      <form class="form-inline" (ngSubmit)="doSearch()">
+        <div class="md-form form-group">
+          <input  mdbInputDirective 
+                  #searchBox
+                  id="search-box" 
+                  type="text"
+                  name="search"
+                  [(ngModel)]="term"
+                  class="form-control"
+                  autocomplete="off"
+                  required>
+          <label for="search-box">Game Name</label>
+        </div>
+          <a mdbBtn color="primary" class="waves-light fit-btn" size="sm" mdbWavesEffect (click)="doSearch()">
+            Search<i class="fas fa-search"></i>
+          </a>
+      </form>
+      <app-game-list></app-game-list>
+    </mdb-card>
+  </div>
+</div>
+    

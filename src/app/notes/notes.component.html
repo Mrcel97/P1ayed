@@ -1,0 +1,21 @@
+<div class="full-bg-img">
+<div class="flex-center container text-center white-text">
+    <div class="white-text text-center wow fadeInUp">
+        <div class="container">
+            <mdb-card class="patch-card" *ngFor="let page of patchesObservableDesc | async">
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-3">
+                        <img class="patch-img" src="https://pbs.twimg.com/profile_images/817588318904975361/twygJOfj_400x400.jpg" alt="patch-notes">
+                    </div>
+                    <div class="col-xl-9">
+                        <mdb-card-body>
+                            <b class="patch-title">{{page.title}}</b>
+                            <mdb-card-text class="patch-text">{{page.description}}</mdb-card-text>
+                        </mdb-card-body>
+                    </div>
+                </div>
+            </mdb-card>
+        </div>
+    </div>
+</div>
+</div>

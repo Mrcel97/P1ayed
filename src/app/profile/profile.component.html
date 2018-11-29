@@ -1,0 +1,23 @@
+<div id="background" class="full-bg-img">
+  <div class="flex-center">
+    <mdb-card class="search-card">
+      <div id='games-header' class="text-center darken-1 text-white game-header">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="d-flex justify-content-start card-header">
+          <h5 class="card-title">Welcome <b *ngIf="user">{{user.displayName}}</b>, nice to see you here!</h5>
+        </div>
+      <div id='cssmenu'>
+        <ul>
+          <li [ngClass]="{'active': actualTab == 'summary'}"><a (click)="select('summary')">Summary</a></li>
+          <li [ngClass]="{'active': actualTab == 'roles'}"><a (click)="select('roles')">Roles</a></li>
+          <li [ngClass]="{'active': actualTab == 'comments'}"><a (click)="select('comments')">Comments</a></li>
+        </ul>
+      </div>
+      <app-summary *ngIf="actualTab == 'summary'"></app-summary>
+      <app-roles *ngIf="actualTab == 'roles'"></app-roles>
+      <app-comments *ngIf="actualTab == 'comments'"></app-comments>
+    </mdb-card>
+  </div>
+</div>
+    

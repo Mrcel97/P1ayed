@@ -1,0 +1,26 @@
+.card-header {
+    margin: 10px 0 20px 0;
+    background-color: transparent;
+    border: solid transparent 0;
+}
+.progress {
+    transition: width 3s, height 4s;
+    margin: 0 10% 20px 10%;
+    content: 'Anonymous';
+}
+.anon::before {
+    content: 'Anonymous';
+    color: black;
+}
+
+.sub::before {
+    content: 'Subscriber';
+}
+
+.dev::before {
+    content: 'Developer';
+}
+
+.admin::before {
+    content: 'Admin';
+}

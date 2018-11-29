@@ -1,0 +1,26 @@
+.expanded {
+    margin: 0 30px 10px 30px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1700px) {
+    .expanded {
+        margin: 0 auto 10px auto;
+        width: 100%;
+        max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .expanded {
+        margin: 0 auto 10px auto;
+        width: 100%;
+        max-width: 950px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .expanded {
+        width: 100%;
+    }
+}

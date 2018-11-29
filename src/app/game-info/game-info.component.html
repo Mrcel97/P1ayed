@@ -1,0 +1,57 @@
+<div class="full-bg-img">
+  <div class="flex-center">
+    <mdb-card class="search-card">
+      <div id='games-header' class="text-center darken-1 text-white game-header">
+        <i class="fas fa-gamepad"></i>
+      </div>
+      <div class="card-content">
+        <div class="d-flex justify-content-between card-info">
+          <div class="card-nav-left">
+            <span class="card-nav" (click)="goBack()"><i class="fas fa-angle-left"></i>Go back</span>
+          </div>
+          <div class="card-nav-right">
+            <span class="card-nav">Game details</span>
+          </div>
+        </div>
+        <div *ngIf="game">
+          <h5 class="card-title wow fadeIn">{{gameService.selectedGame.name}}</h5>
+        </div>
+        <hr/>
+        <div *ngIf="game">
+          <div>
+            <img class="card-img wow fadeIn" src="{{gameService.selectedGame.cover.url}}" alt="game_cover">
+            <p class="card-txt wow fadeIn">{{game.summary}}</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between" style="margin-bottom: 30px" *ngIf="game">
+          <div class="col rating" style="text-align: center">
+            <span>Rating</span><br/>
+            <div class="na-container" [ngClass]="{'hidden': haveRating, 'visibleTab': !haveRating}">
+                <span class="na-title" style="line-height: 50px">N/a</span>
+            </div>
+            <div [ngClass]="{'hidden': !haveRating, 'visible': haveRating}">
+              <i class="fa-star" [ngClass]="{'far': !rating[0], 'fas': rating[0]}" style="color: gold; font-size: 25px"></i>
+              <i class="fa-star" [ngClass]="{'far': !rating[1], 'fas': rating[1]}" style="color: gold; font-size: 25px"></i>
+              <i class="fa-star" [ngClass]="{'far': !rating[2], 'fas': rating[2]}" style="color: gold; font-size: 25px"></i>
+              <i class="fa-star" [ngClass]="{'far': !rating[3], 'fas': rating[3]}" style="color: gold; font-size: 25px"></i>
+              <i class="fa-star" [ngClass]="{'far': !rating[4], 'fas': rating[4]}" style="color: gold; font-size: 25px"></i>
+            </div>
+          </div>
+          <div class="col popularity" style="text-align: center">
+            <span>Popularity</span><br/>
+            <div class="na-container2" [ngClass]="{'hidden': havePopularity, 'visibleTab': !havePopularity}">
+                <span class="na-title" style="line-height: 50px; color: black">N/a</span>
+            </div>
+            <div [ngClass]="{'hidden': !havePopularity, 'visible': havePopularity}">
+              <i class="fa-user" [ngClass]="{'far': !popularity[0], 'fas': popularity[0]}" style="color: dodgerblue; font-size: 25px"></i>
+              <i class="fa-user" [ngClass]="{'far': !popularity[1], 'fas': popularity[1]}" style="color: dodgerblue; font-size: 25px"></i>
+              <i class="fa-user" [ngClass]="{'far': !popularity[2], 'fas': popularity[2]}" style="color: dodgerblue; font-size: 25px"></i>
+              <i class="fa-user" [ngClass]="{'far': !popularity[3], 'fas': popularity[3]}" style="color: dodgerblue; font-size: 25px"></i>
+              <i class="fa-user" [ngClass]="{'far': !popularity[4], 'fas': popularity[4]}" style="color: dodgerblue; font-size: 25px"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mdb-card>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+.full-bg-img{
+    transition: background-image 0.2s ease-in-out;
+    background: url(../media/wallpaper2.jpg)no-repeat center center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.search-card {
+    margin-bottom: 30px;
+    width: 95%;
+}
+.search-card:first-of-type {
+    margin-top: 110px;
+}
+.card-content {
+    min-height: 400px;
+}
+.card-info {
+    border-radius: 3px 3px 0 0;
+    background-color: #70c1ff;
+}
+.fa-angle-left {
+    margin-right: 5px;
+}
+.card-nav-left {
+    color: white;
+    margin: 5px 0 5px 10px;
+    cursor: pointer;
+}
+.card-nav-right {
+    color:  white;
+    margin: 5px 10px 5px 0;
+}
+.card-title {
+    margin: 20px 0 5px 30px;
+}
+.fa-gamepad {
+    margin-left: 10px;
+}
+.game-header {
+    transition: all 0.5s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 200%;
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    left: 43%;
+    border-radius: 50%;
+    padding: 5px 10px 5px 0px;
+    font-size: 20px;
+    background-color: #4285F4;
+}
+.card-img {
+    float: left;
+    width: 150px;
+    margin: 0px 40px 10px 40px;
+}
+.card-txt {
+    margin: 20px 20px 10px 40px;
+    border-radius: 5px;
+    text-align: justify;
+}
+hr {
+    font-size: 14px;
+    margin: 0px 0 5px 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #4285F4, rgb(148, 184, 242), #fff);
+}
+.rating {
+    margin-left: 250px;
+}
+.popularity {
+    margin-right: 270px;
+}
+.fa-star {
+    margin-right: 5px;
+}
+.fa-user {
+    margin-left: 8px;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.visibleTab {
+    vertical-align: middle;
+}
+.na-container {
+    margin: 0 auto 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    background-color: dodgerblue;
+}
+.na-container2 {
+    margin: 0 auto 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid goldenrod;
+    background-color: gold;
+}
+.na-title {
+    font-size: 20px;
+    color: white;
+}
+@media screen and (max-width: 860px) {
+    .rating {
+        margin-left: 20%;
+    }
+    .popularity {
+        margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .rating {
+        margin: 20px 20% 30px 20%;
+    }
+    .popularity {
+        margin: 0px 20% 30px 20%;
+    }
+}

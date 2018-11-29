@@ -1,0 +1,17 @@
+<div class="full-bg-img">
+    <div class="mask rgba-black-light flex-center">
+        <div class="container text-center white-text">
+            <div class="white-text text-center wow fadeInUp" *ngIf="getTab() == 'home'">
+                <h1 class="front-title">Welcome to <strong class="highlight-title">P1</strong>ayed!</h1>
+                <h3 class="info-text">Your all in one games website</h3>
+                <br>
+                <h5 class="sub-info-text">Search for games, news, categories, personal lists and much more!</h5>
+                <br/>
+                <div *ngIf="!user">
+                    <h5 class="sub-info-text">Don't wait more and log-in!</h5>
+                    <app-login></app-login>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

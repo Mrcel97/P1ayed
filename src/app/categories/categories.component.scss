@@ -1,0 +1,13 @@
+.full-bg-img{
+    transition: background-image 0.2s ease-in-out;
+    background: url(../media/wallpaper3.jpg)no-repeat center center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.margin-top {
+    margin-top: 80px;
+}
